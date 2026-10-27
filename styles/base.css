@@ -1,0 +1,44 @@
+/* site wide */
+
+*{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;  
+    align-items: center;
+    border-bottom: solid 1px #dddddd; 
+    column-fill: auto;
+         
+}
+
+header img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 5%;
+}
+
+
+/* Navigator */
+
+.hamburger {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin: 5%;
+    cursor: pointer;
+}   
+
+.hamburger::before {
+    content: "\0006";
+}   
+
+.hamburger.show::before {
+    content: "\0005";   
+}
+
