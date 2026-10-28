@@ -1,5 +1,5 @@
-const navbuttton = document.querySelector('.hamburger');
+const navbutton = document.querySelector('.hamburger');
 
-navbuttton.addEventListener('click', () => {
-    document.querySelector('.nav-menu').classList.toggle('show');
+navbutton.addEventListener('click', () => {
+    navbutton.classList.toggle('show');
 });
