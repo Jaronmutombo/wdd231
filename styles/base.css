@@ -32,6 +32,9 @@ header span {
     color: #3d4053;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: end;
+    padding: 0;
+    line-height: 1;
 }
 
 .hamburger::before {

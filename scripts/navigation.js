@@ -1,4 +1,4 @@
-const hamBtn = document.querySelector('#ham-btn');
+const hamBtn = document.querySelector('.hamburger');
 
 hamBtn.addEventListener('click', () => {
     hamBtn.classList.toggle('show');
