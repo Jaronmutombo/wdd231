@@ -89,3 +89,30 @@ h1 {
     color: var(--color-text);
     text-align: center;
 }
+
+
+
+/* Footer  */
+
+footer {
+    background-color: aliceblue;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.socials a {
+    display: inline-block;
+    border: red 1px solid;
+    width: 44px;
+    height: 44px;
+
+}
