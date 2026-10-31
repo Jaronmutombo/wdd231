@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Jaron Mutombo</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">  
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="images/homelogo.svg" width="32" height="32" alt="Home Logo" class="logo">
+            <span>Jaron Mutombo</span>
+        </div>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation"></button>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Home</h1>
+
+    <!-- Profile Section -->
+        <div class="profile-grid">
+            <section class="card about-card">
+                <h2>About Me</h2>
+                <div class="card-body">
+                    <p>
+                        Hello! My name is Jaron K. Mutombo. I am a software development student passionate about 
+                        building clean, functional, and responsive web applications. I've so many things that I would love someday to implement on the web. 
+                        I also run a small LLC that is growing now in Africa even though I am based in the US. We are making sure through field check and other service
+                         that organizations that donate and support in Africa know and verify that their resources are being used effectively and received by the communities they serve.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card photo-card">
+                <h2>Student Photo</h2>
+                <div class="photo-container">
+                    <img src="images/profile.jpeg" alt="Jaron Mutombo" width="200">
+                </div>
+            </section>
+        </div>
+
+    <!-- Certificate Courses Section -->
+        <section class="card courses-section">
+            <h2>Web Certificate Courses</h2>
+            
+    <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button id="btn-all" class="filter-btn active">All</button>
+                <button id="btn-cse" class="filter-btn">CSE</button>
+                <button id="btn-wdd" class="filter-btn">WDD</button>
+            </div>
+
+    <!-- Dynamically Populated Courses Grid -->
+            <div class="courses-grid" id="courses-container"></div>
+
+    <!-- Calculated Credits Output -->
+            <p class="credits-total">
+                The total credits for course listed above is <span id="total-credits">0</span>
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="24" height="24">
+            </a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub" width="24" height="24">
+            </a>
+            <a href="https://x.com" target="_blank" aria-label="X (Twitter)">
+                <img src="images/twitter-x.svg" alt="X" width="24" height="24">
+            </a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="images/facebooki.svg" alt="Facebook" width="24" height="24">
+            </a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> Jaron Mutombo &bull; Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
