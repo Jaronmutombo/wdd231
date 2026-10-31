@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+    /* Hide Hamburger Button on Desktop */
+    .hamburger {
+        display: none;
+    }
+
+    /* Show Navigation horizontally */
+    .navigation {
+        display: block; /* will try to keep this on the nav (!important) */
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    /* Desktop Grid: Side-by-Side About & Photo Cards */
+    .profile-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    /* Desktop Grid: 3-Column Courses */
+    .courses-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+}
