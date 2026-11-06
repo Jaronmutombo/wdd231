@@ -10,7 +10,7 @@
 
   <header>
     <img src="images/favicon.ico" width="24px" height="24px" alt="Home Logo" class="logo">
-    <h1>Chamber of commerce</h1>
+    <h1>Chamber of Commerce</h1>
 
     <nav class="nav-links">
       <a href="#">Home</a>
@@ -22,12 +22,16 @@
   </header>
 
   <main>
-    <div class="menu">
-      <button id="grid" aria-label="Grid View">Grid View</button>
-      <button id="list" aria-label="List View">List View</button>
+    <h1 class="page-title">Directory</h1>
+
+    <!-- Grid / List Toggle Buttons -->
+    <div class="view-menu">
+      <button id="grid" class="active-view">Grid</button>
+      <button id="list">List</button>
     </div>
-    
-    <article id="members" class="grid"></article>
+
+    <!-- Member Cards Container -->
+    <div id="members" class="grid"></div>
   </main>
 
   <script src="directory.js"></script>
