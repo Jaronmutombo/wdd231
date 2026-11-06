@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber Member Directory</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <header>
+    <img src="images/favicon.ico" width="24px" height="24px" alt="Home Logo" class="logo">
+    <h1>Chamber of commerce</h1>
+
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#" class="active">Directory</a>
+      <a href="#">Join</a>
+      <a href="#">Discover</a>
+      <button class="theme-toggle"></button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="menu">
+      <button id="grid" aria-label="Grid View">Grid View</button>
+      <button id="list" aria-label="List View">List View</button>
+    </div>
     
+    <article id="members" class="grid"></article>
+  </main>
+
+  <script src="directory.js"></script>
 </body>
 </html>
