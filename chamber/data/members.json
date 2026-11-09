@@ -4,17 +4,17 @@
     "address": "124 Alpine Way, Suite 100",
     "phone": "(555) 234-5678",
     "website": "https://www.tesla.com",
-    "image": "tesla-logo.jpg",
+    "image": "tesla-logo.jpeg",
     "membershipLevel": 3,
     "category": "Automotive",
     "established": 2015
   },
   {
-    "name": "PMicrosoft",
+    "name": "Microsoft",
     "address": "890 Innovation Blvd, Floor 4",
     "phone": "(555) 876-5432",
     "website": "https://www.microsoft.com",
-    "image": "microsoft.jpg",
+    "image": "microsoft.jpeg",
     "membershipLevel": 3,
     "category": "Technology Services",
     "established": 2018
@@ -64,7 +64,7 @@
     "address": "55 Center Street, Suite 300",
     "phone": "(555) 789-0123",
     "website": "https://www.weave.com",
-    "image": "weave.jpeg",
+    "image": "Weave-logo.jpeg",
     "membershipLevel": 1,
     "category": "Software Solutions",
     "established": 2003
