@@ -1,3 +1,8 @@
+import { setTitle, renderSections } from "./output.mjs";
+import byuiCourse from "./course.mjs";
+import { setSectionSelection } from "./sections.mjs";
+
+
 const byuiCourse = {
   code: "WDD231",
   name: "Web Frontend Development I",
@@ -29,14 +34,14 @@ const byuiCourse = {
       } else {
         this.sections[sectionIndex].enrolled--;
       }
-      renderSections(this.sections);
+      // renderSections(this.sections); I removed this line to avoid re-rendering the sections immediately after changing enrollment
     }
   },
 };
 
 function setSectionSelection() {
   const sectionSelect = document.querySelector("#sectionNumber");
-  byuiCourse.sections.forEach((section) => {
+    sections.forEach((section) => {
     const option = document.createElement("option");
     option.value = section.sectionNumber;
     option.textContent = `${section.sectionNumber}`;
