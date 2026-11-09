@@ -1,0 +1,65 @@
+@media (min-width: 640px) {
+  /* Grid Layout: 2 Columns for Tablet */
+  #members.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Member Card Body: Image left, details right */
+  .grid .card-body {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Hide Hamburger & Show Navigation Bar */
+  #hamburger-btn {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    border-top: none;
+    padding: 0.5rem 1rem;
+  }
+
+  .page-title {
+    padding: 1.5rem 2rem 0.5rem;
+  }
+
+  /* Grid Layout: 3 Columns for Desktop */
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* List View: Row Layout for Items */
+  #members.list {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #members.list .card-details {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  /* Footer Horizontal Alignment */
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2rem;
+  }
+}

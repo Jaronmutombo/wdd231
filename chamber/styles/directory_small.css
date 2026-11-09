@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* Header & Logo */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #e0e0e0;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+}
+
+/* Responsive Navigation (Mobile Menu Toggle) */
+#hamburger-btn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+#hamburger-btn::before {
+  content: "☰";
+}
+
+#hamburger-btn.show::before {
+  content: "✕";
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-bottom: 2px solid #ccc;
+  z-index: 100;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  border-top: 1px solid #ccc;
+}
+
+.nav-links a.active {
+  background-color: #d0d0d0;
+  font-weight: bold;
+}
+
+/* Page Layout */
+.page-title {
+  padding: 1.5rem 1rem 0.5rem;
+  font-size: 1.8rem;
+}
+
+.view-menu {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.view-menu button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #d0d0d0;
+  border: 1px solid #888;
+}
+
+.view-menu button.active-view {
+  background-color: #a0a0a0;
+  font-weight: bold;
+}
+
+/* GRID VIEW (Mobile: Single Column) */
+#members.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.grid .member-card {
+  background-color: #dcdcdc;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+}
+
+.grid .card-header {
+  text-align: center;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #aaa;
+}
+
+.grid .card-header h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.grid .tagline {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.grid .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.75rem;
+  align-items: center;
+  text-align: center;
+}
+
+.grid .card-body img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  background-color: #aaa;
+  border: 1px solid #888;
+}
+
+.grid .card-details p {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  word-break: break-word;
+}
+
+.grid .card-details a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* LIST VIEW (Mobile View) */
+#members.list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+
+#members.list .member-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.75rem 1rem;
+}
+
+#members.list .card-body img {
+  display: none;
+}
+
+#members.list .card-header {
+  margin-bottom: 0.25rem;
+}
+
+#members.list .card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+/* Footer Layout (Stacked on Mobile) */
+.site-footer {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
