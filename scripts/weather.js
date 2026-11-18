@@ -11,29 +11,24 @@ const myLon = -111.95163556391083;
 const myUnits = 'imperial';
 const myApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=${myUnits}&unit=imperial`;
 
-async function getWeather() {
-  try {
-    const response = await fetch(myApiUrl);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-      myTown.textContent = data.name;
-      myDescription.textContent = data.weather[0].description;
-      myTemperature.textContent = `${data.main.temp.toFixed(0)} °F`;
-      const iconCode = data.weather[0].icon;
-      myGraphic.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-    } else {        
-      throw new Error('Network response was not ok.');
+async function apiFetch() {
+    try {
+        const response = await fetch(myApiUrl);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data); // this is for testing the call
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
     }
-  } catch (error) {
-    console.error('Error fetching weather data:', error);
-  }
 }
 
 
-function displayWeather() {
-  console.log('Fetching weather data...');
-  getWeather(); 
+function displayResults(data) {
+    console.log('hello')
 }
 
-displayWeather();   
+ 
