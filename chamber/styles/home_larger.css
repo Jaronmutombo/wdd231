@@ -1,0 +1,71 @@
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .header-content {
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    nav {
+        display: block;
+        background: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        border-top: none;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-overlay {
+        bottom: 15%;
+        left: 8%;
+        padding: 2rem;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    /* 2-column layout for Events + Weather, full-width for Spotlights */
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .spotlights {
+        grid-column: 1 / -1;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    }
+
+
+  /* Footer Horizontal Alignment */
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2rem;
+    }

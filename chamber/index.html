@@ -7,9 +7,9 @@
 
 
 
-   <link rel="stylesheet" href="styles/directory_normalize.css">
-   <link rel="stylesheet" href="styles/directory_small.css">
-   <link rel="stylesheet" href="styles/directory_larger.css">
+   <!--<link rel="stylesheet" href="styles/directory_normalize.css"> -->
+   <link rel="stylesheet" href="styles/home_small.css">
+   <link rel="stylesheet" href="styles/home_larger.css">
 
 </head>
 <body>
@@ -29,16 +29,101 @@
   </header>
 
   <main>
-    <h1 class="page-title">Directory</h1>
+   <!-- 1. SCALABLE HERO IMAGE & CALL TO ACTION -->
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/SaratogaSprings.jpeg">
+                <source media="(min-width: 600px)" srcset="images/SaratogaSprings.jpeg">
+                <img src="images/SaratogaSprings.jpeg" alt="Downtown Saratoga Springs view" width="1400" height="500">
+            </picture>
+            
+            <div class="hero-overlay">
+                <h1>Choose to be part of Greatness today!</h1>
+                <p>Empowering local commerce, networking, and community development.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
 
-    <!-- Grid / List Toggle Buttons -->
-    <div class="view-menu">
-      <button id="grid" class="active-view">Grid</button>
-      <button id="list">List</button>
-    </div>
+        <!-- GRID CONTAINER FOR EVENTS, WEATHER, AND SPOTLIGHTS -->
+        <div class="home-grid">
+            
+            <!-- 2. CURRENT EVENTS SECTION -->
+            <section class="card events">
+                <h2>Current Events</h2>
+                <div class="event-item">
+                    <h3>Ribbon Cutting: Lakeview Roasters</h3>
+                    <p class="event-meta">Thursday, Nov 19 | 10:00 AM - 11:30 AM</p>
+                    <p>Join us to celebrate the grand opening of our newest local coffee shop on Redwood Road. Complimentary pastries and espresso!</p>
+                </div>
+                <hr>
+                <div class="event-item">
+                    <h3>Monthly Business Networking Luncheon</h3>
+                    <p class="event-meta">Wednesday, Dec 2 | 12:00 PM - 1:30 PM</p>
+                    <p>Connect with fellow business owners and hear from guest speaker Mayor Miller on 2027 infrastructure projects.</p>
+                </div>
+            </section>
 
-    <!-- Member Cards Container -->
-    <div id="members" class="grid"></div>
+            <!-- 3. WEATHER SECTION -->
+            <section class="card weather">
+                <h2>Local Weather</h2>
+                <div class="current-weather">
+                    <img src="https://placehold.co/64x64/ECC94B/1A202C?text=☀️" alt="Sunny weather icon" width="64" height="64">
+                    <div class="weather-details">
+                        <p class="temp">48°F</p>
+                        <p class="condition">Mostly Sunny</p>
+                        <p>Humidity: 35%</p>
+                        <p>Wind: 6 mph NW</p>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <ul>
+                        <li><span>Sun:</span> <strong>51°F</strong></li>
+                        <li><span>Mon:</span> <strong>46°F</strong></li>
+                        <li><span>Tue:</span> <strong>44°F</strong></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 4. COMPANY SPOTLIGHTS SECTION -->
+            <section class="spotlights">
+                <h2>Member Spotlights</h2>
+                <div class="spotlight-grid">
+                    
+                    <article class="card spotlight-card">
+                        <h3>Wasatch Peak Dental</h3>
+                        <img src="https://placehold.co/120x80/EDF2F7/1B365D?text=Dental+Logo" alt="Wasatch Peak Dental Logo" width="120" height="80">
+                        <p class="tagline">"Modern family dentistry with a gentle touch."</p>
+                        <hr>
+                        <p><strong>Phone:</strong> (801) 555-0142</p>
+                        <p><strong>Web:</strong> <a href="#">wasatchpeakdental.com</a></p>
+                        <span class="membership-badge gold">Gold Member</span>
+                    </article>
+
+                    <article class="card spotlight-card">
+                        <h3>Timpanogos Tech Solutions</h3>
+                        <img src="https://placehold.co/120x80/EDF2F7/1B365D?text=Tech+Logo" alt="Timpanogos Tech Solutions Logo" width="120" height="80">
+                        <p class="tagline">"Managed IT and cybersecurity for small businesses."</p>
+                        <hr>
+                        <p><strong>Phone:</strong> (801) 555-0198</p>
+                        <p><strong>Web:</strong> <a href="#">timptechutah.com</a></p>
+                        <span class="membership-badge silver">Silver Member</span>
+                    </article>
+
+                    <article class="card spotlight-card">
+                        <h3>Utah Lake Outfitters</h3>
+                        <img src="https://placehold.co/120x80/EDF2F7/1B365D?text=Outfitters" alt="Utah Lake Outfitters Logo" width="120" height="80">
+                        <p class="tagline">"Kayak rentals, gear, and guided outdoor adventures."</p>
+                        <hr>
+                        <p><strong>Phone:</strong> (801) 555-0177</p>
+                        <p><strong>Web:</strong> <a href="#">utahlakeoutfitters.com</a></p>
+                        <span class="membership-badge gold">Gold Member</span>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
   </main>
 
   <footer class="site-footer">

@@ -1,0 +1,291 @@
+:root {
+    --primary: #1B365D;
+    --secondary: #2C5282;
+    --accent: #D69E2E;
+    --accent-hover: #B7791F;
+    --bg-light: #F7FAFC;
+    --text-dark: #1A202C;
+    --card-bg: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary);
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.site-sub {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+#menu-toggle {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+
+nav {
+    background-color: var(--secondary);
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--accent);
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+/* Scalable Hero Image & CTA */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+    background: rgba(27, 54, 93, 0.88);
+    color: white;
+    padding: 1.25rem;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.hero-overlay h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent);
+    color: var(--text-dark);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-hover);
+    color: white;
+}
+
+/* Main Content Grid */
+.home-grid {
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* Events */
+.event-item {
+    margin-bottom: 1rem;
+}
+
+.event-meta {
+    font-size: 0.85rem;
+    color: #4A5568;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #E2E8F0;
+    margin: 1rem 0;
+}
+
+/* Weather */
+.current-weather {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.temp {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.forecast ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.forecast li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid #EDF2F7;
+}
+
+/* Spotlights */
+.spotlights h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.spotlight-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlight-card img {
+    margin: 0.75rem 0;
+    border-radius: 4px;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #4A5568;
+}
+
+.membership-badge {
+    margin-top: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.gold { background-color: #FEFCBF; color: #744210; }
+.silver { background-color: #EDF2F7; color: #2D3748; }
+
+
+
+
+
+
+
+
+
+
+
+
+.site-footer {
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
